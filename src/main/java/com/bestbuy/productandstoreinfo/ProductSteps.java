@@ -81,14 +81,22 @@ public class ProductSteps {
     }
     @Step("Getting student information with studentId: {0}")
 
-    public ValidatableResponse getProductId(int productId){
+    public ValidatableResponse getProductId(int productId) {
         return SerenityRest.given().log().all()
                 .basePath(Path.PRODUCT)
-                .pathParam("id",productId)
+                .pathParam("id", productId)
                 .when()
                 .get(EndPoints.GET_SINGLE_PRODUCT_BY_ID)
                 .then();
-
     }
+
+        @Step("Get all product info")
+        public ValidatableResponse getAllProductInfo(){
+            return SerenityRest.given().log().all()
+                    .basePath(Path.PRODUCT)
+                    .when()
+                    .get()
+                    .then();
+        }
 
 }

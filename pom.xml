@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.bestbuy</groupId>
-  <artifactId>bestbuy-serenity-wk-18-rachana</artifactId>
+  <artifactId>bestbuy-serenity-cucumber-wk-19-rachana</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>bestbuy-serenity-wk-18-rachana</name>
+  <name>bestbuy-serenity-cucumber-wk-19-rachana</name>
   <url>http://maven.apache.org</url>
 
   <properties>

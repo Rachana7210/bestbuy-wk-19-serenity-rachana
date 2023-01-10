@@ -93,6 +93,15 @@ public class StoreSteps {
                 .when()
                 .get(EndPoints.GET_SINGLE_STORE_BY_STORE_ID)
                 .then();
-
     }
+
+    @Step("Get all product info")
+    public ValidatableResponse getAllStoreInfo(){
+        return SerenityRest.given().log().all()
+                .basePath(Path.STORE)
+                .when()
+                .get()
+                .then();
+    }
+
 }
